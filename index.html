@@ -4,7 +4,7 @@
 
 <script>
 function menu-click(){
-document.getElementById("
+document.getElementById("bar").innerHTML="<img src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg" width=90 height=90>;
 }
 
 </script>
@@ -36,7 +36,7 @@ li+li { border-bottom: 1px solid #000000 }
 width=90 height=90 onclick="menu-click()">
 
 </div>
-<div id="body" style="text-align: center">
+<div id="body" style="text-align: center;margin:0">
 	        <a name="ping"></a>
         <li>
             <h2>ping | !ping</h2>
@@ -55,19 +55,15 @@ width=90 height=90 onclick="menu-click()">
         
         <a name="eta"></a>
         <li>
-            <h2>eta</h2>
+            <h2>eta | !eta</h2>
             <p>Displays your Estimated Time of Arrival</p>
         </li>
         <a name="dc"></a>
         <li>
-            <h2>dc</h2>
+            <h2>dc !dc</h2>
             <p>Moves you to your lost spot, in case you disconnect</p>
         </li>
-        <a name="meh"></a>
-        <li>
-            <h2>meh</h2>
-            <p>Sets required amount of Meh's to skip a song</p>
-        </li>
+        
         <a name="givespot"></a>
         <li>
             <h2>givespot</h2>
@@ -79,6 +75,11 @@ width=90 height=90 onclick="menu-click()">
             <p>Links this help site</p>
         </li>
         <h2 style="color: #263238">Commands For Bouncer and Up</h2>
+        <a name="meh"></a>
+        <li>
+            <h2>meh</h2>
+            <p>Sets required amount of Meh's to skip a song</p>
+        </li>
         <a name="noskip"></a>
         <li>
             <h2>noskip</h2>
