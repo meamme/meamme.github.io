@@ -5,6 +5,8 @@
 <script>
 function menuclick() {
 alert("yay, this doesn't do anything yet");
+
+document.getElementById("bar-exp").innerHTML="<a href='#ping'>ping</a><p><a href='#rules'>rules</a></p><p><a href='#op'>op</a></p><a href='#eta'>eta</a></p><p><a href='#dc'>dc</a></p><p><a href='#givespot'>givespot</a></p><p><a href='#help'>help</a></p><p><a href='#noskip'>noskip</a></p><p><a href='#reload'>reload</a></p><p><a href='#kill'>kill</a></p><p><a href='#meh'>meh</a></p>";
 }
 
 </script>
@@ -27,13 +29,20 @@ color: #000000
 p {
 color: #000000
 }
+
+a {
+color: #000000;
+text-decoration: none;
+}
+
+
 </style>
 </head>
 <body style="padding: 0;">
-<div id="bar" style="background-color:#263238; width=510px; height: 80px; position: fixed">
+<div id="bar" style="background-color:#263238; height: 80px; position: fixed">
 
 <img onclick="menuclick()" src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width=90 height=90 >
-
+<div id="bar-exp"></div>
 </div>
 <div style="align: center">
 
