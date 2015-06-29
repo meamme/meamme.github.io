@@ -12,20 +12,23 @@ document.getElementById("bar").innerHTML="<img src="https://pbs.twimg.com/profil
 <link rel="stylesheet" id="twentytwelve-fonts-css" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
 <style> 
 div {
-    height: 1560px;
+    height: 1900px;
     background-color: #aaaaaa;
     box-shadow: 5px 5px 5px #333333;
     font-family: 'Roboto', sans-serif;
     font-size: 25px
 }
 
-p {
 
+li+li { border-bottom: 1px solid #000000; color: #aaaaaa;}
+
+h2 {
+color: #000000
 }
-
-li+li { border-bottom: 1px solid #000000 }
+p {
+color: #000000
+}
 </style>
-
 </head>
 <body style="padding: 0">
 
@@ -37,64 +40,65 @@ width=90 height=90 onclick="menu-click()">
 
 </div>
 <div id="body" style="text-align: center;margin:0">
-	        <a name="ping"></a>
+	<li>
         <li>
+            <a name="ping"></a>
             <h2>ping | !ping</h2>
             <p>Replies "pong!" when DTE bot is running</p>
-        </li>
+        
         <a name="rules"></a>
         <li>
             <h2>rules | !rules</h2>
             <p>Displays the DTE room rules</p>
-        </li>
+        
         <a name="op"></a>
         <li>
             <h2>op | !op</h2>
             <p>Displays the DTE OverPlayed list</p>
-        </li>
+        
         
         <a name="eta"></a>
         <li>
             <h2>eta | !eta</h2>
             <p>Displays your Estimated Time of Arrival</p>
-        </li>
+        
         <a name="dc"></a>
         <li>
-            <h2>dc !dc</h2>
+            <h2>dc | !dc</h2>
             <p>Moves you to your lost spot, in case you disconnect</p>
-        </li>
+        
         
         <a name="givespot"></a>
         <li>
-            <h2>givespot</h2>
+            <h2>givespot | !givespot @player</h2>
             <p>Gives your spot to another user</p>
-        </li>
+       
         <a name="help"></a>
         <li>
-            <h2>help</h2>
+            <h2>help | !help</h2>
             <p>Links this help site</p>
-        </li>
+        <li>
         <h2 style="color: #263238">Commands For Bouncer and Up</h2>
         <a name="meh"></a>
         <li>
-            <h2>meh</h2>
+            <h2>meh | !meh (number)</h2>
             <p>Sets required amount of Meh's to skip a song</p>
-        </li>
+        
         <a name="noskip"></a>
         <li>
-            <h2>noskip</h2>
+            <h2>noskip | !noskip</h2>
             <p>Disables automatically skipping the next song</p>
-        </li>
+        
         <a name="kill"></a>
         <li>
-            <h2>kill</h2>
+            <h2>kill | !kill</h2>
             <p>Kills the bot</p>
-        </li>
+        
         <a name="reload"></a>
         <li>
-            <h2>reload</h2>
+            <h2>reload | !reload</h2>
             <p>Reloads the bot</p>
-        </li>
+        
 
 </div>
 </div>
