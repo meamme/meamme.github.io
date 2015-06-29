@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <script>
+function menu-click(){
+document.getElementById("
+}
+
 </script>
+
 <link rel="stylesheet" id="twentytwelve-fonts-css" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
 <style> 
 div {
-    height: 1500px;
+    height: 1560px;
     background-color: #aaaaaa;
     box-shadow: 5px 5px 5px #333333;
     font-family: 'Roboto', sans-serif;
@@ -24,28 +30,75 @@ li+li { border-bottom: 1px solid #000000 }
 <body style="padding: 0">
 
 <div style="align: center">
-<div id="bar" style="background-color:#263238; width=510px; height: 40px">
-<img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width=50 height=50>
+<div id="bar" style="background-color:#263238; width=510px; height: 80px">
+
+<img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" 
+width=90 height=90 onclick="menu-click()">
+
 </div>
 <div id="body" style="text-align: center">
-	        <p></p><h2><b>USER COMMANDS</b></h2><p></p>
-<p><hr><cmdname><a name="dc"><b>dc | !dc</b></a></cmdname></p>
-<p>If you disconnected, this will move you back to you're spot.</p>
-<p><hr><cmdname><a name="eta"><b>eta | !eta</b></a></cmdname></p>
-<p>This will tell you the estimated time you have to wait to DJ.</p>
-<p><hr><cmdname><a name="fb"><b>fb | !fb</b></a></cmdname></p>
-<p>This will put the DTE Facebook page into the chat.</p>
-<p><hr><cmdname><a name="givespot"><b>givespot | !givespot @user</b></a></cmdname></p>
-<p>This will give your current waitlist posistion to a user. The user must be lower than you on the waitlist.</p>
-<p><hr><cmdname><a name="help"><b>help | !help</b></a></cmdname></p>
-<p>This will put this website into chat.</p>
-<p><hr><cmdname><a name="op"><b>op | !op</b></a></cmdname></p>
-<p>This will put the OP list into chat.</p>
-<p><hr><cmdname><a name="ping"><b>ping | !ping</b></a></cmdname></p>
-<p>Pong!</p>
-<p><hr><cmdname><a name="rules"><b>rules | !rules</b></a></cmdname></p>
-<p>This will put the rules in chat.</p>
+	        <a name="ping"></a>
+        <li>
+            <h2>ping | !ping</h2>
+            <p>Replies "pong!" when DTE bot is running</p>
+        </li>
+        <a name="rules"></a>
+        <li>
+            <h2>rules | !rules</h2>
+            <p>Displays the DTE room rules</p>
+        </li>
+        <a name="op"></a>
+        <li>
+            <h2>op | !op</h2>
+            <p>Displays the DTE OverPlayed list</p>
+        </li>
+        
+        <a name="eta"></a>
+        <li>
+            <h2>eta</h2>
+            <p>Displays your Estimated Time of Arrival</p>
+        </li>
+        <a name="dc"></a>
+        <li>
+            <h2>dc</h2>
+            <p>Moves you to your lost spot, in case you disconnect</p>
+        </li>
+        <a name="meh"></a>
+        <li>
+            <h2>meh</h2>
+            <p>Sets required amount of Meh's to skip a song</p>
+        </li>
+        <a name="givespot"></a>
+        <li>
+            <h2>givespot</h2>
+            <p>Gives your spot to another user</p>
+        </li>
+        <a name="help"></a>
+        <li>
+            <h2>help</h2>
+            <p>Links this help site</p>
+        </li>
+        <h2 style="color: #263238">Commands For Bouncer and Up</h2>
+        <a name="noskip"></a>
+        <li>
+            <h2>noskip</h2>
+            <p>Disables automatically skipping the next song</p>
+        </li>
+        <a name="kill"></a>
+        <li>
+            <h2>kill</h2>
+            <p>Kills the bot</p>
+        </li>
+        <a name="reload"></a>
+        <li>
+            <h2>reload</h2>
+            <p>Reloads the bot</p>
+        </li>
+
 </div>
 </div>
+
+
+
 </body>
 </html>
