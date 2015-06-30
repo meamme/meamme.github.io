@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function menuclick() {
+
+document.getElementById("bar-exp").innerHTML="<a href='#ping'>ping</a><p><a href='#rules'>rules</a></p><p><a href='#op'>op</a></p><a href='#eta'>eta</a></p><p><a href='#dc'>dc</a></p><p><a href='#givespot'>givespot</a></p><p><a href='#help'>help</a></p><p><a href='#noskip'>noskip</a></p><p><a href='#reload'>reload</a></p><p><a href='#kill'>kill</a></p><p><a href='#meh'>meh</a></p>";
+
+}
+
+</script>
+
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
+<style> 
+div {
+    background-color: #aaaaaa;
+    box-shadow: 5px 5px 5px #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px
+}
+
+
+li+li { border-bottom: 1px solid #000000; color: #aaaaaa;}
+
+h2 {
+color: #000000;
+font-family: 'Roboto', sans-serif;
+
+}
+p {
+color: #000000;
+font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+color: #000000;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+
+}
+
+
+</style>
+</head>
+<body style="padding: 0;" onload="ol()">
+<div id="bar" style="background-color:#263238; height: 80px; position: fixed">
+
+<img onclick="menuclick()" src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width=90 height=90 >
+<div id="bar-exp" style="background-color: #263238"></div>
+</div>
+<div style="align: center">
+
+<div id="body" style="text-align: center;margin:0">
+	<li>
+        <li>
+            <a name="ping"></a>
+            <h2>ping | !ping</h2>
+            <p>Replies "pong!" when DTE bot is running</p>
+        
+        <a name="rules"></a>
+        <li>
+            <h2>rules | !rules</h2>
+            <p>Displays the DTE room rules</p>
+        
+        <a name="op"></a>
+        <li>
+            <h2>op | !op</h2>
+            <p>Displays the DTE OverPlayed list</p>
+        
+        
+        <a name="eta"></a>
+        <li>
+            <h2>eta | !eta</h2>
+            <p>Displays your Estimated Time of Arrival</p>
+        
+        <a name="dc"></a>
+        <li>
+            <h2>dc | !dc</h2>
+            <p>Moves you to your lost spot, in case you disconnect</p>
+        
+        
+        <a name="givespot"></a>
+        <li>
+            <h2>givespot | !givespot @player</h2>
+            <p>Gives your spot to another user</p>
+       
+        <a name="help"></a>
+        <li>
+            <h2>help | !help</h2>
+            <p>Links this help site</p>
+        <li>
+        <h2 style="color: #263238">Commands For Bouncer and Up</h2>
+       
+        <a name="noskip"></a>
+        <li>
+            <h2>noskip | !noskip</h2>
+            <p>Disables automatically skipping the next song</p>
+        
+       
+        <a name="reload"></a>
+        <li>
+            <h2>reload | !reload</h2>
+            <p>Reloads the bot</p>
+        <li>
+        <h2 style="color: #263238">Commands For Manager and Up</h2>
+         <a name="kill"></a>
+        <li>
+            <h2>kill | !kill</h2>
+            <p>Kills the bot</p>
+         <a name="meh"></a>
+        <li>
+            <h2>meh | !meh (number)</h2>
+            <p>Sets required amount of Meh's to skip a song</p>
+        
+</div>
+</div>
+
+
+
+</body>
+</html>
