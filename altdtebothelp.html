@@ -1,0 +1,211 @@
+<html><head>
+
+  <title>Materialize CSS Framework Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+
+<script>
+function imgclick() {
+document.getElementById("funlist").innerHTML="<hr><h2>potato | !potato</h2><p>Displays Fun Potato Facts</p><hr><h2>gif | !gif tag1 tag2 etc</h2><p>Uses the Giphy API to display fun gifs!</p><hr><a name='cookie'></a><h2>cookie | !cookie</h2><p>cookie <img src='http://www.spyblocker-software.com/wp-content/uploads/2014/06/cookie-1.gif' height=30></p>";
+}
+
+function menuclick() {
+
+document.getElementById("bar-exp").innerHTML="<a href='#ping'>ping</a><p><a href='#rules'>rules</a></p><p><a href='#fb'>fb</a></p><p><a href='#op'>op</a></p><a href='#eta'>eta</a></p><p><a href='#dc'>dc</a></p><p><a href='#givespot'>givespot</a></p><p><a href='#help'>help</a></p><p style='color: #7e2aff'>Staff</p><p><a href='#noskip'>noskip</a></p><p><a href='#reload'>reload</a></p><p><a href='#kill'>kill</a></p><p><a href='#meh'>meh</a></p><p><a href='#' onclick='imgclick()'>Fun</a></p>";
+
+}
+
+</script>
+
+<style>
+
+.boxs {
+    box-shadow: 5px 5px 5px #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+div.main {
+
+    background-color: #ffffff;
+}
+
+li+li { border-bottom: 1px solid #000000; color: #ffffff;}
+
+h2 {
+color: #000000;
+font-family: 'Roboto', sans-serif;
+
+}
+p {
+color: #000000;
+font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+color: #000000;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align: center;
+  
+font-family: 'Roboto', sans-serif;
+}
+
+.hr {
+	margin-bottom: 6px
+}
+
+.header {
+	width: 75%
+}
+
+.fab {
+	margin-left: 90%;
+	margin-top: 500px;
+	position: fixed
+}
+</style>
+</head>
+<body background="https://4.bp.blogspot.com/-BO5bA4-O4e0/U96PuX6bnYI/AAAAAAABF4Q/xTLlW0qQ5co/s0/Google+IO+Paper+Design.jpg" style="">
+
+  <!-- jQuery is required by Materialize to function -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    //custom JS code
+  </script>
+  
+  <!-- main page -->
+  
+  <div class="intro blue lighten-2 z-depth-1 boxs headr">
+  <h1 class="grey-text text-lighten-5">DTE BOT HELP</h1>
+  <h5 class="grey lighten-4 grey-text text-darken-1">Made by Meamme</h5>
+</div>
+  <a class="btn-floating btn-large waves-effect waves-light red fab"><i class="mdi-content-add"></i></a>
+
+  <div id="bar" class="boxs" style="background-color: #41b7d8; height: 80px; position: fixed;margin-left: 10%">
+
+     <ul id="slide-out" class="side-nav full">
+  <a href='#ping'>ping</a><hr>
+  <p><a href='#rules'>rules</a></p><hr>
+  <p><a href='#fb'>fb</a></p><hr>
+  <p><a href='#op'>op</a></p><hr>
+  <p><a href='#eta'>eta</a></p><hr>
+  <p><a href='#dc'>dc</a></p><hr>
+  <p><a href='#givespot'>givespot</a></p><hr>
+  <p><a href='#help'>help</a></p><hr>
+  <p style='color: #7e2aff'>Staff</p><hr>
+  <p><a href='#noskip'>noskip</a></p><hr>
+  <p><a href='#reload'>reload</a></p><hr>
+  <p><a href='#kill'>kill</a></p><hr>
+  <p><a href='#meh'>meh</a></p><hr>
+  <p><a href='#' onclick='imgclick()'>Fun</a></p><hr>
+
+</ul>
+
+<a href="#" data-activates="slide-out" class="button-collapse">
+  <i class="large mdi-navigation-menu"></i>
+</a>
+
+<script>$(".button-collapse").sideNav();</script>
+
+</div>
+
+<div style="margin: 0 auto;align:center;margin-left: 25%;box-shadow: 0px 0px 0px #333333">
+
+  
+<div class="main boxs" style="align: center; width: 75%;">
+
+<div class="main boxs" id="body" style="text-align: center;align: center;">
+        <img src="" id="simage" onclick="imgclick()">
+	<div id="funlist" class="boxs"></div>
+    	
+    	
+		
+            <a name="ping"></a>
+            <h2>ping | !ping</h2>
+            <p>Replies "pong!" when DTE bot is running</p>
+         
+        
+
+        <a name="rules"></a>
+        <hr>
+            <h2> <a href="https://meamme.github.io/rules.html" style="color: #41b7d8">rules | !rules</a></h2>
+            <p>Displays the DTE room <a href="https://meamme.github.io/rules.html" style="color: #41b7d8">rules</a></p>
+        
+        <a name="fb"></a>
+        <hr>
+            <h2>fb | !fb</h2>
+            <p>Links to DTE's Facebook</p>
+        
+        <a name="op"></a>
+        <hr>
+            <h2>op | !op</h2>
+            <p>Displays the DTE OverPlayed list</p>
+        
+        
+        <a name="eta"></a>
+        <hr>
+            <h2>eta | !eta</h2>
+            <p>Displays your Estimated Time of Arrival</p>
+        
+        <a name="dc"></a>
+        <hr>
+            <h2>dc | !dc</h2>
+            <p>Moves you to your lost spot, in case you disconnect</p>
+        
+        
+        <a name="givespot"></a>
+        <hr>
+            <h2>givespot | !givespot @player</h2>
+            <p>Gives your spot to another user</p>
+       
+        <a name="help"></a>
+        <hr>
+            <h2>help | !help</h2>
+            <p>Links this help site</p>
+        <hr>
+        <h2 style="color: #000000">Commands For <span style="color: #AC76FF">Bouncer</span> and Up</h2>
+       
+        <a name="noskip"></a>
+        <hr>
+            <h2>noskip | !noskip</h2>
+            <p>Disables automatically skipping the next song</p>
+        
+         
+       
+        <a name="reload"></a>
+        <hr>
+            <h2>reload | !reload</h2>
+            <p>Reloads the bot</p>
+        <hr>
+        <h2 style="color: #000000">Commands For <span style="color: #AC76FF">Manager</span> and Up</h2>
+         <a name="kill"></a>
+        <hr>
+            <h2>kill | !kill</h2>
+            <p>Kills the bot</p> <p style="color:#FF0000">DO NOT USE UNDER ANY CIRCUMSTANCES OTHER THAN WHEN IT IS NEEDED</p>
+         <a name="meh"></a>
+        <hr>
+            <h2>meh | !meh (number)</h2>
+            <p>Sets required amount of Meh's to skip a song</p>
+       
+</div>
+</div>
+
+</div>
+  
+
+</div></body></html>
