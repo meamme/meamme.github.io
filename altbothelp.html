@@ -1,12 +1,30 @@
-<html><head>
 
+<html lang="en-US"><head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
   <title>DTE Bot Help</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="css/style.css">
-
+<script src="bowser.js"></script>
+<script src="bowser.min.js"></script>
 <script>
+	
+function onlo(){
+if (bowser.chrome) {
+var element = document.getElementById("navb");
+element.style.margin-top="0px";
+}
+if (bowser.firefox) {
+  ff();
+}
+}
+function ff() {
+var element = document.getElementById("navb");
+element.style.margin-top="0px";
+}
+	
 function imgclick() {
 document.getElementById("funlist").innerHTML="<hr><h2>potato | !potato</h2><p>Displays Fun Potato Facts</p><hr><h2>gif | !gif tag1 tag2 etc</h2><p>Uses the Giphy API to display fun gifs!</p><hr><a name='cookie'></a><h2>cookie | !cookie</h2><p>cookie <img src='http://www.spyblocker-software.com/wp-content/uploads/2014/06/cookie-1.gif' height=30></p>";
 }
@@ -84,10 +102,13 @@ font-family: 'Roboto', sans-serif;
 	margin-top: 45%;
 	position: fixed
 }
+
+.navbr {
+}
 </style>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body background="https://4.bp.blogspot.com/-BO5bA4-O4e0/U96PuX6bnYI/AAAAAAABF4Q/xTLlW0qQ5co/s0/Google+IO+Paper+Design.jpg" style="">
+<body onload="onlo()" background="https://4.bp.blogspot.com/-BO5bA4-O4e0/U96PuX6bnYI/AAAAAAABF4Q/xTLlW0qQ5co/s0/Google+IO+Paper+Design.jpg" style="">
 
   <!-- jQuery is required by Materialize to function -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -98,7 +119,10 @@ font-family: 'Roboto', sans-serif;
   
   <!-- main page -->
   
- <!-- <div class="navbar-fixed teal">
+ <!-- 
+ 
+ 
+ <div class="navbar-fixed teal">
     <nav>
       <div class="nav-wrapper teal">
 		  
@@ -136,7 +160,8 @@ font-family: 'Roboto', sans-serif;
   <li><a href='#meh'>meh</a></li>
   <li><a href='#' onclick='imgclick()'>Fun</a></p></li>
 </ul>
-<nav style="position:fixed;margin-top:-27px" class="teal">
+<div id="navb">
+<nav class="teal navbr">
   <div class="nav-wrapper teal">
     <a href="#!" class="brand-logo teal">
       <a class="dropdown-button" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a></a>
@@ -148,7 +173,7 @@ font-family: 'Roboto', sans-serif;
     </ul>
   </div>
 </nav>
-
+</div>
   
   <a class="btn-floating btn-large waves-effect waves-light teal fab" onclick="fabclick()"><i class="large material-icons">stars</i></a>
 
