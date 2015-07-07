@@ -16,7 +16,9 @@ document.getElementById("bar-exp").innerHTML="<a href='#ping'>ping</a><p><a href
 function fabclick() {
 	document.getElementById('fabclick').innerHTML="<div class='card blue-grey darken-1'><div class='card-content white-text'><span class='card-title'>Who made this?</span><p>This site was made by Meamme with the help of the css library Materialize<p style='color:#cccccc'>For some reason firefox hates Materialize, so no luck to FF users.</p></p></div><div class='card-action'><a onclick='dismissp' href=''>DISMISS</a></div></div>";
 	}
-	
+function fabdarkclick() {
+	window.location="darkaltbothelp.html";
+	}	
 function dismissp() {
 	document.getElementById("fabclick").innerHTML="";
 }
@@ -133,6 +135,7 @@ font-family: 'Roboto', sans-serif;
 
   
   <a class="btn-floating btn-large waves-effect waves-light teal fab" onclick="fabclick()"><i class="large material-icons">stars</i></a>
+  <a class="btn-floating btn-large waves-effect waves-light black fabdark" onclick="fabdarkclick()"><i class="large material-icons">stars</i></a>
 
   
      
