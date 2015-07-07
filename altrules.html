@@ -1,6 +1,6 @@
 <html><head>
 
-  <title>DTE Rules</title>
+  <title>DTE Bot Help</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
@@ -10,7 +10,9 @@
 function imgclick() {
 document.getElementById("funlist").innerHTML="<hr><h2>potato | !potato</h2><p>Displays Fun Potato Facts</p><hr><h2>gif | !gif tag1 tag2 etc</h2><p>Uses the Giphy API to display fun gifs!</p><hr><a name='cookie'></a><h2>cookie | !cookie</h2><p>cookie <img src='http://www.spyblocker-software.com/wp-content/uploads/2014/06/cookie-1.gif' height=30></p>";
 }
-
+function menuclick() {
+document.getElementById("bar-exp").innerHTML="<a href='#ping'>ping</a><p><a href='#rules'>rules</a></p><p><a href='#fb'>fb</a></p><p><a href='#op'>op</a></p><a href='#eta'>eta</a></p><p><a href='#dc'>dc</a></p><p><a href='#givespot'>givespot</a></p><p><a href='#help'>help</a></p><p style='color: #7e2aff'>Staff</p><p><a href='#noskip'>noskip</a></p><p><a href='#reload'>reload</a></p><p><a href='#kill'>kill</a></p><p><a href='#meh'>meh</a></p><p><a href='#' onclick='imgclick()'>Fun</a></p>";
+}
 function fabclick() {
 	document.getElementById('fabclick').innerHTML="<div class='card blue-grey darken-1'><div class='card-content white-text'><span class='card-title'>Who made this?</span><p>This site was made by Meamme with the help of the css library Materialize<p style='color:#cccccc'>For some reason firefox hates Materialize, so no luck to FF users.</p></p></div><div class='card-action'><a onclick='dismissp' href=''>DISMISS</a></div></div>";
 	}
@@ -100,7 +102,22 @@ font-family: 'Roboto', sans-serif;
   <p><a href='#meh'>meh</a></p><hr>
   <p><a href='#' onclick='imgclick()'>Fun</a></p><hr>
 -->
- 
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href='#ping'>ping</a><hr></li>
+  <li><a href='#rules'>rules</a></li>
+  <li><a href='#fb'>fb</a></li>
+  <li><a href='#op'>op</a></li>
+  <li><a href='#eta'>eta</a></li>
+  <li><a href='#dc'>dc</a></li>
+  <li><a href='#givespot'>givesp</a></li>
+  <li><a href='#help'>help</a></li>
+  <li><p style='color: #7e2aff'>Staff</li>
+  <li><a href='#noskip'>noskip</a></li>
+  <li><a href='#reload'>reload</a></li>
+  <li><a href='#kill'>kill</a></li>
+  <li><a href='#meh'>meh</a></li>
+  <li><a href='#' onclick='imgclick()'>Fun</a></p></li>
+</ul>
 <nav style="position:fixed;margin-top:-29px" class="teal">
   <div class="nav-wrapper teal">
     <a href="#!" class="brand-logo teal">
@@ -135,55 +152,55 @@ font-family: 'Roboto', sans-serif;
 		
 <h3 style="color:#ffffff;opacity:0;">DTE Rules!</h3>
     	
-    	<div class="card blue-grey white">
+    	<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 		<a name="noask">Please do not ask to skip a song, without reason.<p style="font-size: 15px">(They will get skipped at 8 mehs)</p></a>
           
 
             </div>
           </div>
-          <div class="card blue-grey white">
+          <div class="card-panel blue-grey white">
             <div class="card-content black-text">
         <a name="over8">Please do not play songs over 8 minutes.</a>
             
             </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
         <a name="noaskrp">Please do not ask for ranks or positions, <br>you will either not get it, or be muted.</a>
              </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 
         <a name="nonsfw">No NSFW(Not Safe For Work) Content: <p>porn,gore,excessive language,etc.</p></a>
             </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 
         <a name="noad">Please do not advertise other rooms.</a>
             </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 
         <a name="nosfa">Please do not spam, flood, or use automeh.</a>
             </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 
         <a name="edmonly">Please only play EDM songs <p style="font-size:15px">(Electronic Dance Music)</p></a>
             </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 
         <a name="resphr">Please respect ranks that are higher than you.</a>
             </div>
           </div>
-			<div class="card blue-grey white">
+			<div class="card-panel blue-grey white">
             <div class="card-content black-text">
 
         <a name="havefun">Last but not least, <span style="color:#00E676
