@@ -15,6 +15,7 @@ function onlo(){
 if (bowser.chrome) {
 var element = document.getElementById("navb");
 element.style.margin-top="0px";
+element.style.position="fixed";
 }
 if (bowser.firefox) {
   ff();
@@ -23,6 +24,8 @@ if (bowser.firefox) {
 function ff() {
 var element = document.getElementById("navb");
 element.style.margin-top="0px";
+
+element.style.position="fixed";
 }
 	
 function imgclick() {
