@@ -94,27 +94,27 @@ font-family: 'Roboto', sans-serif;
   
   <!-- main page -->
  
-  <ul id="dropdown1" class="dropdown-content">
-  <li><a href='#ping'>ping</a><hr></li>
-  <li><a href='#rules'>rules</a></li>
-  <li><a href='#fb'>fb</a></li>
-  <li><a href='#op'>op</a></li>
-  <li><a href='#eta'>eta</a></li>
-  <li><a href='#dc'>dc</a></li>
-  <li><a href='#givespot'>givesp</a></li>
-  <li><a href='#help'>help</a></li>
-  <li><p style='color: #7e2aff'>Staff</li>
-  <li><a href='#noskip'>noskip</a></li>
-  <li><a href='#reload'>reload</a></li>
-  <li><a href='#kill'>kill</a></li>
-  <li><a href='#meh'>meh</a></li>
-  <li><a href='#' onclick='imgclick()'>Fun</a></p></li>
-  <li><a href='#' onclick='dogeclick()'>Doge</a></p></li>
-</ul>
+  
 <nav style="position:fixed;margin-top:-23px" class="teal">
   <div class="nav-wrapper teal">
     <a href="#!" class="brand-logo teal">
-      <a class="dropdown-button" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a></a>
+      </a><a class="dropdown-button" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a><ul id="dropdown1" class="dropdown-content">
+  <li><a href="#ping">ping</a><hr></li>
+  <li><a href="#rules">rules</a></li>
+  <li><a href="#fb">fb</a></li>
+  <li><a href="#op">op</a></li>
+  <li><a href="#eta">eta</a></li>
+  <li><a href="#dc">dc</a></li>
+  <li><a href="#givespot">givesp</a></li>
+  <li><a href="#help">help</a></li>
+  <li><p style="color: #7e2aff">Staff</p></li>
+  <li><a href="#noskip">noskip</a></li>
+  <li><a href="#reload">reload</a></li>
+  <li><a href="#kill">kill</a></li>
+  <li><a href="#meh">meh</a></li>
+  <li><a href="#" onclick="imgclick()">Fun</a><p></p></li>
+  <li><a href="#" onclick="dogeclick()">Doge</a><p></p></li>
+</ul>
     <a href="#" class="brand-logo center">DTE Bot Commands</a>
     <ul class="right">
       <li><a href="rules.html">Rules</a></li>
@@ -125,8 +125,9 @@ font-family: 'Roboto', sans-serif;
 </nav>
 
   
-   <a class="btn-floating btn-large waves-effect waves-light teal fab btn modal-trigger" href="#modal1"><i class="large material-icons">stars</i></a>
- <a class="btn-floating btn-large waves-effect waves-light black fabdark" onclick="fabdarkclick()"><i class="large material-icons">visibility</i></a>
+   <a class="btn-floating btn-large waves-effect waves-light teal fab btn modal-trigger  btn tooltipped" href="#modal1" data-position="left" data-delay="50" data-tooltip="More Info">
+    <i class="large material-icons">stars</i></a>
+ <a class="btn-floating btn-large waves-effect waves-light black fabdark btn tooltipped" onclick="fabdarkclick()" data-position="left" data-delay="50" data-tooltip="Dark Mode"><i class="large material-icons">visibility</i></a>
 
 <div class="card infobox">
               <div class="card-image">
@@ -283,12 +284,12 @@ font-family: 'Roboto', sans-serif;
 </div>
   
 
-</div>
+
 
 <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Who made this?</h4>
-      <p>This site was made by Meamme with the help of the css library Materialize<p style='color:#cccccc'>For some reason firefox hates Materialize, so no luck to FF users.</p>
+      <p>This site was made by Meamme with the help of the css library Materialize</p><p style="color:#cccccc">For some reason firefox hates Materialize, so no luck to FF users.</p>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">DISMISS</a>
@@ -299,4 +300,5 @@ font-family: 'Roboto', sans-serif;
     $('.modal-trigger').leanModal();
   });
        </script>
-       </body></html>
+       
+<div class="hiddendiv common"></div></body></html>
