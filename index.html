@@ -1,6 +1,6 @@
 <html><head>
 
-  <title>DTE Bot Help</title>
+  <title>DTE Rules</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
@@ -13,13 +13,10 @@ document.getElementById("funlist").innerHTML="<hr><h2>potato | !potato</h2><p>Di
 function menuclick() {
 document.getElementById("bar-exp").innerHTML="<a href='#ping'>ping</a><p><a href='#rules'>rules</a></p><p><a href='#fb'>fb</a></p><p><a href='#op'>op</a></p><a href='#eta'>eta</a></p><p><a href='#dc'>dc</a></p><p><a href='#givespot'>givespot</a></p><p><a href='#help'>help</a></p><p style='color: #7e2aff'>Staff</p><p><a href='#noskip'>noskip</a></p><p><a href='#reload'>reload</a></p><p><a href='#kill'>kill</a></p><p><a href='#meh'>meh</a></p><p><a href='#' onclick='imgclick()'>Fun</a></p>";
 }
-function fabdarkclick() {
-	window.location="darkaltbothelp.html";
+	function fabdarkclick() {
+	window.location="rules.html";
 	}
-function dogeclick() {
 	
-	window.location="dogealtbothelp.html";
-}
 </script>
 
 <style>
@@ -63,15 +60,15 @@ font-family: 'Roboto', sans-serif;
 	width: 75%
 }
 .fab {
-	margin-left: 93%;
-	margin-top: 46%;
-	position: fixed
+	position: fixed;
+     right: 20px;
+     bottom: 10px;
 }
 .fabdark {
 	
-	margin-left: 93%;
-	margin-top: 41%;
-	position: fixed
+	position: fixed;
+     right: 20px;
+     bottom: 80px;
 }
 .infobox {
 	margin-left: 81%;
@@ -80,58 +77,23 @@ font-family: 'Roboto', sans-serif;
 	height: 350;
 	position: fixed
 }
-.pickerbox {
-	margin-left: 2%;
-	margin-top: 66px;
-	width: 230;
-	height: 350;
-	position: fixed
-}
-
-.acards {
-		width:65%;
-	}
-@media only screen and (min-width : 1002px) {
-	.mbutton {
-	opacity:0;
-}}
+media only screen and (max-width : 1002px) {.infobox {
+		margin-left: 150%;
+	}}
 	@media only screen and (max-width : 1002px) {
     
     .infobox {
 		margin-left: 150%;
 	}
-	.pickerbox {
-		margin-left: 150%;
-	}
 	
-	.fab {
-	margin-left: 91%;
-	margin-top:66%;
-	position: fixed
-}
-.fabdark {
 	
-	margin-left: 91%;
-	margin-top: 60%;
-	position: fixed
-}
 .acards {
 		width:80%;
 	}
     }
      @media only screen and (max-width : 802px) {
 		
-		.fab {
-	margin-left: 91%;
-	margin-top:86%;
-	position: fixed
-}
-.fabdark {
-	
-	margin-left: 91%;
-	margin-top: 80%;
-	position: fixed
-} 
+		
     .body {
 		
 		margin-left: 5;
@@ -143,7 +105,7 @@ font-family: 'Roboto', sans-serif;
 </style>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body background="https://4.bp.blogspot.com/-BO5bA4-O4e0/U96PuX6bnYI/AAAAAAABF4Q/xTLlW0qQ5co/s0/Google+IO+Paper+Design.jpg" style="">
+<body background="https://i.imgur.com/Ynjq0Zj.jpg" style="">
 
   <!-- jQuery is required by Materialize to function -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -153,44 +115,65 @@ font-family: 'Roboto', sans-serif;
   </script>
   
   <!-- main page -->
- 
   
-<nav style="position:fixed;margin-top:-23px" class="teal">
+ <!-- <div class="navbar-fixed teal">
+    <nav>
+      <div class="nav-wrapper teal">
+		  
+        <a><ul id="slide-out" class="side-nav full">
+			
+  <a href='#ping'>ping</a><hr>
+  <p><a href='#rules'>rules</a></p><hr>
+  <p><a href='#fb'>fb</a></p><hr>
+  <p><a href='#op'>op</a></p><hr>
+  <p><a href='#eta'>eta</a></p><hr>
+  <p><a href='#dc'>dc</a></p><hr>
+  <p><a href='#givespot'>givespot</a></p><hr>
+  <p><a href='#help'>help</a></p><hr>
+  <p style='color: #7e2aff'>Staff</p><hr>
+  <p><a href='#noskip'>noskip</a></p><hr>
+  <p><a href='#reload'>reload</a></p><hr>
+  <p><a href='#kill'>kill</a></p><hr>
+  <p><a href='#meh'>meh</a></p><hr>
+  <p><a href='#' onclick='imgclick()'>Fun</a></p><hr>
+-->
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href='#ping'>ping</a><hr></li>
+  <li><a href='#rules'>rules</a></li>
+  <li><a href='#fb'>fb</a></li>
+  <li><a href='#op'>op</a></li>
+  <li><a href='#eta'>eta</a></li>
+  <li><a href='#dc'>dc</a></li>
+  <li><a href='#givespot'>givesp</a></li>
+  <li><a href='#help'>help</a></li>
+  <li><p style='color: #7e2aff'>Staff</li>
+  <li><a href='#noskip'>noskip</a></li>
+  <li><a href='#reload'>reload</a></li>
+  <li><a href='#kill'>kill</a></li>
+  <li><a href='#meh'>meh</a></li>
+  <li><a href='#' onclick='imgclick()'>Fun</a></p></li>
+</ul>
+<nav style="position:fixed;margin-top:-29px" class="teal">
   <div class="nav-wrapper teal">
     <a href="#!" class="brand-logo teal">
-      </a><a class="dropdown-button mbutton" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a><ul id="dropdown1" class="dropdown-content">
-
-  <li><a href="#ping">ping</a><hr></li>
-  <li><a href="#rules">rules</a></li>
-  <li><a href="#fb">fb</a></li>
-  <li><a href="#op">op</a></li>
-  <li><a href="#eta">eta</a></li>
-  <li><a href="#dc">dc</a></li>
-  <li><a href="#givespot">givesp</a></li>
-  <li><a href="#help">help</a></li>
-  <li><p style="color: #7e2aff">Staff</p></li>
-  <li><a href="#noskip">noskip</a></li>
-  <li><a href="#reload">reload</a></li>
-  <li><a href="#kill">kill</a></li>
-  <li><a href="#meh">meh</a></li>
-  <li><a href="#" onclick="imgclick()">Fun</a><p></p></li>
-  <li><a href="#" onclick="dogeclick()">Doge</a><p></p></li>
-</ul>
-    <a href="#" class="brand-logo center">DTE Bot Commands</a>
+      <a class="dropdown-button" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a></a>
+    <a href="#" class="brand-logo center">DTE Rules</a>
     <ul class="right">
-      <li><a href="rules.html">Rules</a></li>
-      <li><a href="index.html">Bot Commands</a></li>
+		
+      <li><a href="darkaltbothelp.html">Bot Commands</a></li>
+      <li><a href="darkrules.html">Rules</a></li>
       <!-- Dropdown Trigger -->
     </ul>
   </div>
 </nav>
 
   
-   <a class="btn-floating btn-large waves-effect waves-light teal fab btn modal-trigger  btn tooltipped" href="#modal1" data-position="left" data-delay="50" data-tooltip="More Info">
+  <a class="btn-floating btn-large waves-effect waves-light teal fab btn modal-trigger  btn tooltipped" href="#modal1" data-position="left" data-delay="50" data-tooltip="More Info">
     <i class="large material-icons">stars</i></a>
- <a class="btn-floating btn-large waves-effect waves-light black fabdark btn tooltipped" onclick="fabdarkclick()" data-position="left" data-delay="50" data-tooltip="Dark Mode"><i class="large material-icons">visibility</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light black fabdark btn tooltipped" onclick="fabdarkclick()" data-position="left" data-delay="50" data-tooltip="Light Mode"><i class="large material-icons">visibility_off</i></a>
 
-<div class="card infobox">
+  
+<div class="card infobox blue-grey">
               <div class="card-image">
       <img src="http://i.imgur.com/LdUWwZs.png">
        <span class="card-title white-text text-darken-4">Dubstep,Techno, And Electro</span>
@@ -199,186 +182,100 @@ font-family: 'Roboto', sans-serif;
               <div class="card-content">
     
      
-      <p style="text-size: 16px;z-index: 0">What is Dubstep, Techno, and Electro?<br> a fun, enjoyable, chilled, nice community centered around great music and great people.
+      <p style="text-size: 16px;z-index: 0;">What is Dubstep, Techno, and Electro?<br> a fun, enjoyable, chilled, nice community centered around great music and great people.
      
       </p>
     </div>
   </div>
-  
-  <div class="card pickerbox" style="text-align: center;height:610px;width:210px">
-	
-       <span class="card-title black-text text-darken-4">
-		   <a class="btn white black-text" style="width:200">Commands</a>      
-		   
-		   <p style="text-size: 16px;z-index: 0">
-      <a href="#ping" class="waves-effect waves-light btn" style="width:200">ping</a>
-  <a href="#rules" class="waves-effect waves-light btn" style="width:200">rules</a>
-  <a href="#fb" class="waves-effect waves-light btn" style="width:200">facebook</a>
-  <a href="#op" class="waves-effect waves-light btn" style="width:200">op</a>
-  <a href="#eta" class="waves-effect waves-light btn" style="width:200">eta</a>
-  <a href="#dc" class="waves-effect waves-light btn" style="width:200">dc</a>
-  <a href="#givespot" class="waves-effect waves-light btn" style="width:200">givespot</a>
-  <a href="#help" class="waves-effect waves-light btn" style="width:200">help</a>
-  <a class="btn white black-text" style="width:200">Staff</a>
-  <a href="#noskip" class="waves-effect waves-light btn" style="width:200">noskip</a>
-  <a href="#reload" class="waves-effect waves-light btn" style="width:200">reload</a>
-  <a href="#kill" class="waves-effect waves-light btn" style="width:200">kill</a>
-  <a href="#meh" class="waves-effect waves-light btn" style="width:200">meh</a>
-  <a href="#" onclick="imgclick()" class="waves-effect waves-light btn" style="width:200">Fun</a>
-  <a href="#" onclick="dogeclick()" class="waves-effect waves-light btn" style="width:200">Doge</a>
-      </p>
-      </span>
-              
-              
-    </div>
-  </div>
-  
-	<div class="card infobox" style="margin-top: 430px;height:140px;text-align:center"> <a href="https://plug.dj/dubstep-techno-and-electro" style="width:300"  class="waves-effect waves-light btn"><i class="material-icons left">headset</i>plug.dj</a><br>
-      <a href="http://dtecommunity.com/" style="width:300" class="waves-effect waves-light btn"><i class="material-icons left">reorder</i>Forums</a><br>
-      <a href="http://bit.ly/DTandE-FB"  style="width:300" class="waves-effect waves-light btn"><i class="material-icons left">face</i>Facebook</a><br>
-      <a href="http://steamcommunity.com/groups/DubstepTechnoElectro"  style="width:300" class="waves-effect waves-light btn"><i class="material-icons left">build</i>Steam</a><br></div>
+	<div class="card infobox dark" style="margin-top: 430px;height:140px;text-align:center"> <a href="https://plug.dj/dubstep-techno-and-electro" style="width:300"  class="waves-effect waves-light btn dark teal "><i class="material-icons left">headset</i>plug.dj</a><br>
+      <a href="http://dtecommunity.com/" style="width:300" class="waves-effect waves-light btn dark teal "><i class="material-icons left">reorder</i>Forums</a><br>
+      <a href="http://bit.ly/DTandE-FB"  style="width:300" class="waves-effect waves-light btn dark teal "><i class="material-icons left">face</i>Facebook</a><br>
+      <a href="http://steamcommunity.com/groups/DubstepTechnoElectro"  style="width:300" class="dark teal waves-effect waves-light btn"><i class="material-icons left">build</i>Steam</a><br></div>
          
-<div style="margin: 0 auto;align:center;margin-left: 25%;box-shadow: 0px 0px 0px #333333">
+
+
+<div style="margin: 0 auto;align:center;margin-left: 20%;box-shadow: 0px 0px 0px #333333">
 
   
-<div style="align: center;" class="acards">
+<div style="align: center; width: 75%;">
 
 <div id="body" style="text-align: center;align: center;">
         <img src="" id="simage" onclick="imgclick()">
 	<div id="funlist" class="boxs"></div>
     	
+    	<div id="fabclick" style="position: fixed;margin-left:19%;margin-top:5%;width:400px;height:100px;border: 2px"></div>
 		
-		
-    
-		
-		<h3 style="opacity:0;">_</h3>
-			<div class="card-panel blue-grey white">
+<h3 style="color:#ffffff;opacity:0;">DTE Rules!</h3>
+    	
+    	<div class="card-panel blue-grey blue-grey">
             <div class="card-content black-text">
-		
-            <a name="ping"></a>
-            <h4>ping | !ping</h4>
-            <p>Replies "pong!" when DTE bot is running</p>
-         </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-				
-        <a name="rules"></a>
-            <h4>rules | !rules</h4>
-            <p>Displays the DTE roomrules</p>
-                 </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        <a name="fb"></a>
-            <h4>fb | !fb</h4>
-            <p>Links to DTE's Facebook</p>
-        </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        <a name="op"></a>
-            <h4>op | !op</h4>
-            <p>Displays the DTE OverPlayed list</p>
-         </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        
-        <a name="eta"></a>
-            <h4>eta | !eta</h4>
-            <p>Displays your Estimated Time of Arrival</p>
-        </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        <a name="dc"></a>
-            <h4>dc | !dc</h4>
-            <p>Moves you to your lost spot, in case you disconnect</p>
-        </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        
-        <a name="givespot"></a>
-            <h4>givespot | !givespot @player</h4>
-            <p>Gives your spot to another user</p>
-       </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        <a name="help"></a>
-            <h4>help | !help</h4>
-            <p>Links this help site</p>
+		<a name="noask">Please do not ask to skip a song, without reason.<p style="font-size: 15px">(They will get skipped at 8 mehs)</p></a>
+          
+
             </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
+          </div>
+          <div class="card-panel blue-grey blue-grey">
             <div class="card-content black-text">
-        <h3 style="color: #000000">Commands For <span style="color: #AC76FF">Bouncer</span> and Up</h3>
-       </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        <a name="noskip"></a>
-            <h4>noskip | !noskip</h4>
-            <p>Disables automatically skipping the next song</p>
-        
-         </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-       
-        <a name="reload"></a>
-            <h4>reload | !reload</h4>
-            <p>Reloads the bot</p>
-        
-        </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-        <h3 style="color: #000000">Commands For <span style="color: #AC76FF">Manager</span> and Up</h3>
-        </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
-            <div class="card-content black-text">
-         <a name="kill"></a>
-            <h4>kill | !kill</h4>
-            <p>Kills the bot</p> <p style="color:#FF0000">DO NOT USE UNDER ANY CIRCUMSTANCES OTHER THAN WHEN IT IS NEEDED</p>
+        <a name="over8">Please do not play songs over 8 minutes.</a>
+            
             </div>
-         </div>
-         
-			<div class="card-panel blue-grey white">
+          </div>
+			<div class="card-panel blue-grey blue-grey">
             <div class="card-content black-text">
-         <a name="meh"></a>
-            <h4>meh | !meh (number)</h4>
-            <p>Sets required amount of Meh's to skip a song</p>
-       </div>
-         </div>
-         
+        <a name="noaskrp">Please do not ask for ranks or positions, <br>you will either not get it, or be muted.</a>
+             </div>
+          </div>
+			<div class="card-panel blue-grey blue-grey">
+            <div class="card-content black-text">
+
+        <a name="nonsfw">No NSFW(Not Safe For Work) Content: <p>porn,gore,excessive language,etc.</p></a>
+            </div>
+          </div>
+			<div class="card-panel blue-grey blue-grey">
+            <div class="card-content black-text">
+
+        <a name="noad">Please do not advertise other rooms.</a>
+            </div>
+          </div>
+			<div class="card-panel blue-grey blue-grey">
+            <div class="card-content black-text">
+
+        <a name="nosfa">Please do not spam, flood, or use automeh.</a>
+            </div>
+          </div>
+			<div class="card-panel blue-grey blue-grey">
+            <div class="card-content black-text">
+
+        <a name="edmonly">Please only play EDM songs <p style="font-size:15px">(Electronic Dance Music)</p></a>
+            </div>
+          </div>
+			<div class="card-panel blue-grey blue-grey">
+            <div class="card-content black-text">
+
+        <a name="resphr">Please respect ranks that are higher than you.</a>
+            </div>
+          </div>
+			<div class="card-panel blue-grey blue-grey">
+            <div class="card-content black-text">
+
+        <a name="havefun">Last but not least, <span style="color:#00E676
+">Have Fun!</span></a>
+
+</div>
+          </div>
+
 </div>
 </div>
 
 </div>
   
 
-
+</div>
 
 <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Who made this?</h4>
-      <p>This site was made by Meamme with the help of the css library Materialize</p><p style="color:#cccccc">For some reason firefox hates Materialize, so no luck to FF users.</p>
+      <p>This site was made by Meamme with the help of the css library Materialize<p style='color:#cccccc'>For some reason firefox hates Materialize, so no luck to FF users.</p>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">DISMISS</a>
@@ -389,5 +286,4 @@ font-family: 'Roboto', sans-serif;
     $('.modal-trigger').leanModal();
   });
        </script>
-       
-<div class="hiddendiv common"></div></body></html>
+       </body></html>
