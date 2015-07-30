@@ -74,12 +74,24 @@ font-family: 'Roboto', sans-serif;
 	width: 230;
 	height: 350;
 	position: fixed
-}@media only screen and (max-width : 1002px) {.infobox {
-		margin-left: 150%;
-	}}
+}
+.pickerbox {
+	margin-left: 2%;
+	margin-top: 66px;
+	width: 230;
+	height: 350;
+	position: fixed
+}
+@media only screen and (min-width : 1002px) {
+	.mbutton {
+	opacity:0;
+}}
 	@media only screen and (max-width : 1002px) {
     
     .infobox {
+		margin-left: 150%;
+	}
+	.pickerbox {
 		margin-left: 150%;
 	}
 	
@@ -173,7 +185,7 @@ font-family: 'Roboto', sans-serif;
 <nav style="position:fixed;margin-top:-21px" class="teal">
   <div class="nav-wrapper teal">
     <a href="#!" class="brand-logo teal">
-      <a class="dropdown-button" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a></a>
+      <a class="dropdown-button mbutton" href="#!" data-activates="dropdown1"><img src="https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png" width="70"></a></a>
     <a href="#" class="brand-logo center">DTE Bot Commands</a>
     <ul class="right">
       <li><a href="darkrules.html">Rules</a></li>
@@ -202,6 +214,35 @@ font-family: 'Roboto', sans-serif;
       </p>
     </div>
   </div>
+  
+  <div class="card dark pickerbox" style="text-align: center;height:610px;width:210px">
+	
+       <span class="card-title black-text text-darken-4">
+		   <a class="btn black white-text" style="width:200">Commands</a>      
+		   
+		   <p style="text-size: 16px;z-index: 0">
+      <a href="#ping" class="waves-effect waves-light btn" style="width:200">ping</a>
+  <a href="#rules" class="waves-effect waves-light btn" style="width:200">rules</a>
+  <a href="#fb" class="waves-effect waves-light btn" style="width:200">facebook</a>
+  <a href="#op" class="waves-effect waves-light btn" style="width:200">op</a>
+  <a href="#eta" class="waves-effect waves-light btn" style="width:200">eta</a>
+  <a href="#dc" class="waves-effect waves-light btn" style="width:200">dc</a>
+  <a href="#givespot" class="waves-effect waves-light btn" style="width:200">givespot</a>
+  <a href="#help" class="waves-effect waves-light btn" style="width:200">help</a>
+  <a class="btn black white-text" style="width:200">Staff</a>
+  <a href="#noskip" class="waves-effect waves-light btn" style="width:200">noskip</a>
+  <a href="#reload" class="waves-effect waves-light btn" style="width:200">reload</a>
+  <a href="#kill" class="waves-effect waves-light btn" style="width:200">kill</a>
+  <a href="#meh" class="waves-effect waves-light btn" style="width:200">meh</a>
+  <a href="#" onclick="imgclick()" class="waves-effect waves-light btn" style="width:200">Fun</a>
+  <a href="#" onclick="dogeclick()" class="waves-effect waves-light btn" style="width:200">Doge</a>
+      </p>
+      </span>
+              
+              
+    </div>
+  </div>
+  
 	<div class="card infobox dark" style="margin-top: 430px;height:140px;text-align:center"> <a href="https://plug.dj/dubstep-techno-and-electro" style="width:300"  class="waves-effect waves-light btn dark teal "><i class="material-icons left">headset</i>plug.dj</a><br>
       <a href="http://dtecommunity.com/" style="width:300" class="waves-effect waves-light btn dark teal "><i class="material-icons left">reorder</i>Forums</a><br>
       <a href="http://bit.ly/DTandE-FB"  style="width:300" class="waves-effect waves-light btn dark teal "><i class="material-icons left">face</i>Facebook</a><br>
