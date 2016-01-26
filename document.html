@@ -57,8 +57,13 @@
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Placeholder" id="date_req" type="text" class="validate">
-          <label for="date_req">Date Requested (MM/DD/YY)</label>
+          <input type="date" class="datepicker">
+          
+          <script> 
+          $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  	});</script>
         </div>
         
         
