@@ -60,20 +60,20 @@
         </div>
         <div class="input-field col s6">
         Event Start Time
-          <input type="date" class="datepickerevent" id="startdate">
-          <input type="time" class="timepickerevent" id="starttime">
-          <label for="startdate">Start Date Of Event</label>
+          <input type="date" class="startdatepicker">
+          <input type="time" class="timepicker" id="starttime">
+          <label for="datepicker">Start Date Of Event</label>
           <script> 
-          $('.datepickerevent').pickadate({
+          $('.startdatepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
   	});</script>
   	Event End Time
-  	<input type="date" class="datepickerevent" id="enddate">
-          <input type="time" class="timepickerevent">
-          <label for="enddate">End Date Of Event</label>
+  	<input type="date" class="enddatepicker">
+          <input type="time" class="timepicker">
+          <label for="enddatepicker">End Date Of Event</label>
           <script> 
-          $('.datepickerevent').pickadate({
+          $('.enddatepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
   	});</script>
