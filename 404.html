@@ -4,6 +4,15 @@
     background:url("/maxresdefault.jpg") no-repeat fixed center; 
 }
 </style>
+<script>
+  for (i = 0; i < 100; i++) {
+  document.getElementById("yn").innerHTML="<b><i>You're not supposed to be here.</i></b>"
+  
+setTimeout(function(){
+    document.getElementById("yn").innerHTML="You're not supposed to be here."
+}, 2000);
+  }
+</script>
 <body background="/maxresdefault.jpg" >
   <div style="align:center;padding: 40%">You're not supposed to be here.</div>
 </body>
