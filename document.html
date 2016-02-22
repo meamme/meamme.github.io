@@ -6,9 +6,11 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="css/style.css">
 
-<script>
+<script type="text/javascript">
+    window.onbeforeunload = function() {
+        return "Are you sure you want to reload?";
+    }
 </script>
-
 <style>
 
 
@@ -189,7 +191,6 @@
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
   	});</script>
-  	 <input type="time" class="timepicker">
   	</div>
           
           
